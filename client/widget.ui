@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>583</width>
+    <height>426</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>网络调试助手-客户端-绯色</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QWidget#Widget{
+    background-color:#f0f7ff;
+}
+QLabel{
+    color:#194066;
+    font-size:9pt;
+}
+QLineEdit#lineEditAddr, QLineEdit#lineEditPort{
+    background-color:#f8fbff;
+    border:1px solid #b8d8f0;
+    border-radius:4px;
+    padding:2px;
+}
+QTextEdit#textEditRev, QTextEdit#textEditSend{
+    background-color:#ffffff;
+    border:1px solid #b8d8f0;
+    border-radius:4px;
+}
+QPushButton{
+    background-color:#a0cdf0;
+    border:none;
+    border-radius:5px;
+    color:#0f2f48;
+    padding:4px;
+}
+QPushButton:hover{
+    background-color:#7fb9e8;
+}
+QPushButton:pressed{
+    background-color:#60a4dd;
+    color:white;
+}
+   </string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>2</y>
+     <width>581</width>
+     <height>424</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="6,1,2">
+    <item>
+     <widget class="QTextEdit" name="textEditRev"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>服务端IP</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditAddr">
+        <property name="text">
+         <string>192.168.10.101</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>服务端端口</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditPort">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>8888</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>指定端口</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditLocalPort"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnConnect">
+        <property name="text">
+         <string>连接</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btndisConnect">
+        <property name="text">
+         <string>断开</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QTextEdit" name="textEditSend"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnSend">
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>发送</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

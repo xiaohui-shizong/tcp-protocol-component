@@ -1,0 +1,36 @@
+﻿# Qt Creator 本地配置（含本机路径，不应提交）
+*.pro.user
+*.pro.user.*
+
+# 构建产物
+build-*/
+debug/
+release/
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+Makefile
+Makefile.*
+*.Debug
+*.Release
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+.qmake.stash
+*.stash
+
+# 测试可执行文件
+test_protocol.exe
+test_e2e_tcp.exe
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+*.swp
+*~
+Thumbs.db
+desktop.ini
